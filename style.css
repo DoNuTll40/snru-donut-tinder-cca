@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 5%, transparent 100%);
+  background-color: rgba(0, 0, 0, 0.02);
+  position: sticky;
+  top: 0;
+  max-height: 80px;
+  max-width: 98%;
+  margin: 0 auto;
+  padding-left: 1%;
+  padding-right: 2%;
+  z-index: 1000;
+}
+
+.fade {
+  position: relative;
+  z-index: 999;
+}
+
+img {
+  margin-left: -15px;
+}
+
+.back-color-1 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 1%,transparent 80%);
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  margin: -8px;
+  position: relative;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  padding-top: 5vh;
+  min-height: 70vh;
+}
+
+.center p {
+  color: white;
+  margin: 0px;
+  margin-top: -30px;
+  opacity: 70%;
+  z-index: 1000;
+  font-weight: 400;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.text-center {
+  color: white;
+  font-size: 7.5vw;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.reg {
+  font-weight: 200;
+  font-size: 50%;
+  transform: scale(0.5, 1);
+}
+
+.btn-c-style {
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  width: 228px;
+  height: 46px;
+  border-radius: 150px;
+  border: none;
+  font-size: 19px;
+  font-weight: 700;
+  background: rgb(255, 94, 57);
+  background: linear-gradient(
+    200deg,
+    rgba(255, 94, 57, 1) 0%,
+    rgba(253, 39, 119, 1) 100%
+  );
+  transition: 0s;
+}
+
+.btn-c-style:hover {
+  transition: 2ms;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgb(196, 72, 43);
+  background: linear-gradient(
+    208deg,
+    rgba(196, 72, 43, 1) 0%,
+    rgba(199, 30, 93, 1) 100%
+  );
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 90%;
+  padding-left: 1%;
+}
+
+.img-logo {
+  padding-top: 1%;
+  margin-right: 5px;
+}
+
+.lang-log {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.container {
+  position: sticky;
+  padding: 20px;
+  padding-bottom: 0px;
+  display: inline-block;
+  background-color: white;
+  margin-top: 8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: 0px;
+  z-index: 1000;
+  top: 80px;
+}
+
+.low-title {
+  text-align: right;
+  right: 20px;
+  letter-spacing: 0.01px;
+  padding-right: 20px;
+  margin-top: 5vw;
+}
+
+.low-title label {
+  color: rgb(245, 245, 245);
+  font-size: 11px;
+  font-weight: 400;
+  display: flex;
+  float: inline-end;
+}
+
+.nav-button {
+  display: flex;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+label {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.lang-icon {
+  margin-right: 5px;
+}
+
+.lang {
+  color: rgba(255, 255, 255, 1);
+}
+
+.lang:hover {
+  transition: 5ms;
+  color: rgba(200, 200, 200, 1);
+}
+
+.login {
+  margin-top: 22px;
+  margin-left: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  min-width: 120px;
+  max-width: 120px;
+  height: 35px;
+  border-radius: 150px;
+  border: none;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: larger;
+  font-weight: 600;
+  margin-right: 25px;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(220, 220, 220);
+}
+
+.login:hover {
+  cursor: pointer;
+  transition: 2ms;
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.nav-title {
+  display: inline-flex;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+.nav-title:hover {
+  text-decoration: underline;
+  color: #c4052d;
+}
+
+.nav-title a {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.nav-title:hover a:hover {
+  color: #c4052d;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 0px;
+  font-size: 20px;
+  border: none;
+  font-weight: 400;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.down-sub {
+  padding-left: 15%;
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.dropdown-content {
+  padding-top: 5px;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: large;
+  color: rgb(245, 245, 245);
+  width: 230px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 2px;
+  margin-left: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+}
+
+.dropdown-content a:hover {
+  color: #c4052d;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #c4052d;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.back-pic {
+  background-image: url(https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+}
+
+.slide {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.card-slide {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-none {
+  display: inline-table;
+  max-width: 100%;
+  padding: 20px;
+  height: 270px;
+  max-height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  justify-content: space-evenly;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: smaller;
+  font-weight: 500;
+}
+
+.card-none:hover {
+  transition: 250ms;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.con-margin {
+  display: inline-block;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.social-sec {
+  display: flex;
+  justify-content: left;
+  margin-top: 0px;
+}
+
+.legal {
+  margin-right: 3vw;
+}
+
+.legal h3 {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.legal li,
+a {
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  color: #505965;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 30px;
+}
+
+.legal:hover a:hover {
+  color: #c4052d;
+}
+
+.careers {
+  margin-right: 8vw;
+}
+
+.careers li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.careers h3 {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.careers:hover a:hover {
+  color: #c4052d;
+}
+
+.faq li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+.faq:hover a:hover {
+  color: #c4052d;
+}
+
+/* social media tag a */
+.social {
+  margin-right: 5vw;
+}
+
+.social a {
+  text-decoration: none;
+  display: inline;
+  margin: 0px;
+  margin-right: 15px;
+}
+
+.social h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+hr {
+  border-style: inset;
+}
+
+/* - icon social media - */
+
+.social-icon {
+  font-size: 25px;
+}
+
+.social-icon:hover {
+  transition: 300ms;
+  color: #c4052d;
+}
+
+.low-bar-title p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.down-load {
+  display: flex;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.down-load h2 {
+  margin-top: 25px;
+  font-size: large;
+}
+
+.icon-down {
+  margin-top: 10px;
+  display: flex;
+}
+
+.app-store img {
+  width: 130px;
+}
+
+.app-store {
+  margin-top: 7.5px;
+  margin-left: 40px;
+  margin-right: 5px;
+}
+
+.app-store a:hover {
+  opacity: 80%;
+}
+
+.play-store img {
+  width: 150px;
+}
+
+.play-store a:hover {
+  opacity: 80%;
+}
+
+.foot-cradit {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  margin-bottom: 25px;
+}
+
+.foot-link-bar {
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.foot-link-bar a {
+  font-size: small;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.a-foot:hover {
+  color: #c4052d;
+}
+
+.copyright p {
+  color: #505965;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .logo {
+    margin-top: 0 auto;
+    padding-top: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lang-log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .lang-log button {
+    width: 100%;
+  }
+
+  .lang-log input[type=button] {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+  }
+
+  .card-slide {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .social-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+
+  .social-sec li {
+    display: flex;
+    text-align: center;
+    
+  }
+}
